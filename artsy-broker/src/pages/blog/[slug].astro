@@ -1,0 +1,69 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    {
+      params: { slug: 'post-1' },
+      props: {
+        title: 'Witaj na naszym blogu!',
+        date: '2026-08-15',
+        excerpt: 'To jest pierwszy post na naszym blogu. Tutaj będziemy publikować artykuły, poradniki i aktualności związane z serwisem ArtSy Broker.',
+        author: 'Artur',
+      },
+    },
+  ];
+}
+
+const { props } = Astro.props;
+const { title, date, excerpt, author } = props ?? {};
+
+const formattedDate = new Date(date).toLocaleDateString('pl-PL', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Layout title={`${title} | ArtSy Broker Blog`}>
+  <!-- Blog Post Header -->
+  <header class="blog-post-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="/">Strona główna</a> / 
+        <a href="/blog/">Blog</a> / 
+        <span class="current">{title}</span>
+      </nav>
+      <h1 class="post-title">{title}</h1>
+      <div class="post-meta">
+        {author && <span class="author">Autor: <strong>{author}</strong></span>}
+        <span class="separator">|</span>
+        <span class="date">Data: {formattedDate}</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Post Content -->
+  <article class="blog-post-content">
+    <div class="container">
+      <div class="post-body">
+        {excerpt && <p class="post-excerpt">{excerpt}</p>}
+        
+        <!-- Content will be rendered from MDX file -->
+        <div class="post-content-placeholder">
+          <h2>Treść artykułu</h2>
+          <p>Tutaj zostanie wyświetlona treść Twojego artykułu w formacie Markdown/MDX.</p>
+          <p>Aby dodać nowy artykuł, stwórz plik .md lub .mdx w katalogu <code>src/pages/blog/</code>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Back to Blog Link -->
+  <footer class="blog-footer">
+    <div class="container">
+      <a href="/blog/" class="back-link">← Wróć do listy artykułów</a>
+    </div>
+  </footer>
+
+</Layout>

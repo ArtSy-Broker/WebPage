@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'ArtSy Broker | Blog';
+---
+
+<Layout title={title}>
+  <!-- Blog Header -->
+  <header class="blog-header">
+    <div class="container">
+      <h1 class="blog-title">Blog</h1>
+      <p class="blog-subtitle">Aktualności i artykuły z serwisu ArtSy Broker</p>
+    </div>
+  </header>
+
+  <!-- Blog Posts List -->
+  <main class="blog-posts">
+    <div class="container">
+      <div class="posts-grid">
+        <div class="post-card" data-post="/blog/post-1.mdx">
+          <h2 class="post-title">Witaj na naszym blogu!</h2>
+          <p class="post-excerpt">To jest pierwszy post na naszym blogu. Tutaj będziemy publikować artykuły, poradniki i aktualności związane z serwisem ArtSy Broker.</p>
+          <div class="post-meta">
+            <span class="post-date">Data: 2026-08-15</span>
+            <a href="/blog/post-1.mdx" class="read-more">Czytaj więcej →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</Layout>
