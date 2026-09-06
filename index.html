@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtSy Broker – Niezależny Broker Finansowania B2B & Energetyki | Lublin</title>
+  <meta name="description" content="Skuteczny leasing maszyn i pojazdów w trudnych procedurach (bez obrotów, import z UE w EUR, bez BIK zarządu) oraz bezpłatny audyt i optymalizacja energii dla firm. Metodyka BABOK.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0F19',
+            brandCard: '#1E293B',
+            brandBorder: '#334155',
+            brandBlue: '#0284C7',
+            brandCyan: '#38BDF8',
+            brandGreen: '#10B981',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+
+  <!-- Schema.org JSON-LD pod SEO i GEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "ArtSy Broker",
+    "image": "https://artsy.broker/logo.png",
+    "@id": "https://artsy.broker/#organization",
+    "url": "https://artsy.broker",
+    "telephone": "+48722326385",
+    "email": "artur@artsy.broker",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Waleriana Łukasińskiego 13a",
+      "addressLocality": "Lublin",
+      "postalCode": "20-454",
+      "addressCountry": "PL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.2291,
+      "longitude": 22.5694
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "hasMap": "https://maps.app.goo.gl/L1sqtnhjxuyJpMpX7",
+    "sameAs": [
+      "https://maps.app.goo.gl/L1sqtnhjxuyJpMpX7"
+    ],
+    "description": "Niezależny broker finansowania B2B oraz doradca optymalizacji energii. Specjalizacja w trudnym leasingu maszyn i aut oraz redukcji kar za moc bierną."
+  }
+  </script>
+</head>
+<body class="bg-brandDark text-slate-100 antialiased selection:bg-brandBlue selection:text-white">
+
+  <!-- NAWIGACJA -->
+  <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur border-b border-brandBorder/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-black tracking-tight text-white">ArtSy <span class="text-brandCyan">Broker</span></span>
+        <span class="hidden sm:inline-block px-2.5 py-0.5 text-xs font-semibold bg-brandBlue/20 text-brandCyan rounded border border-brandBlue/30">B2B Expert</span>
+      </div>
+      
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#dlaczego-my" class="hover:text-brandCyan transition">Metodyka BABOK</a>
+        <a href="#finansowanie" class="hover:text-brandCyan transition">Leasing B2B</a>
+        <a href="#energia" class="hover:text-brandCyan transition">Energetyka</a>
+        <a href="#model-samosplacajacy" class="hover:text-brandGreen transition">Model Samospłacający się</a>
+        <a href="#case-study" class="hover:text-brandCyan transition">Case Study</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <a href="tel:+48722326385" class="hidden lg:flex items-center space-x-2 text-sm font-semibold text-white hover:text-brandCyan transition">
+          <svg class="w-4 h-4 text-brandCyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+48 722 326 385</span>
+        </a>
+        <a href="#kontakt" class="bg-brandBlue hover:bg-sky-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition shadow-lg shadow-sky-900/40">
+          Bezpłatny Audyt 0 zł
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-brandBorder mb-8">
+        <span class="w-2 h-2 rounded-full bg-brandGreen animate-pulse"></span>
+        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Niezależny Broker B2B • Podejście BABOK® Guide</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.15] max-w-5xl mx-auto">
+        Uwalniamy kapitał. <br>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-brandCyan via-sky-400 to-brandBlue">Likwidujemy zbędne koszty</span> w Twojej firmie.
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
+        Skuteczny leasing maszyn i aut w trudnych sytuacjach (bez obrotów, import z UE w EUR, bez sprawdzania majątku zarządu) oraz bezpłatny audyt i redukcja kar za energię i moc bierną. Bez składania zapytań w ciemno.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#finansowanie" class="w-full sm:w-auto px-8 py-4 bg-brandBlue hover:bg-sky-500 text-white font-bold rounded-xl transition shadow-xl shadow-sky-900/30 flex items-center justify-center space-x-2">
+          <span>Sprawdź Finansowanie B2B</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <a href="#kontakt" class="w-full sm:w-auto px-8 py-4 bg-brandGreen/20 hover:bg-brandGreen/30 text-brandGreen border border-brandGreen/40 font-bold rounded-xl transition flex items-center justify-center space-x-2">
+          <span>Darmowy Audyt Faktury (0 zł)</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- PASEK ZAUFANIA -->
+      <div class="mt-16 pt-8 border-t border-brandBorder/60 grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto">
+        <div class="border-l-2 border-brandBlue pl-4">
+          <div class="text-2xl font-black text-white">5.0 ⭐</div>
+          <div class="text-xs text-slate-400 mt-0.5">Ocena w Google Maps</div>
+        </div>
+        <div class="border-l-2 border-brandCyan pl-4">
+          <div class="text-2xl font-black text-white">24h</div>
+          <div class="text-xs text-slate-400 mt-0.5">Wstępny pre-scoring bez BIK</div>
+        </div>
+        <div class="border-l-2 border-brandGreen pl-4">
+          <div class="text-2xl font-black text-white">100%</div>
+          <div class="text-xs text-slate-400 mt-0.5">Likwidacja kar za moc bierną</div>
+        </div>
+        <div class="border-l-2 border-slate-500 pl-4">
+          <div class="text-2xl font-black text-white">15+</div>
+          <div class="text-xs text-slate-400 mt-0.5">Dostępnych funduszy leasingowych</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODYKA BABOK -->
+  <section id="dlaczego-my" class="py-20 bg-slate-900/50 border-y border-brandBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-2">Przewaga Analizy Biznesowej</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">Dlaczego niezależny Broker B2B, a nie przedstawiciel banku?</p>
+        <p class="mt-4 text-slate-400">Zgodnie ze standardem BABOK® Guide (Business Analysis Body of Knowledge) koncentrujemy się na rzeczywistych potrzebach Twojego przedsiębiorstwa, a nie na wyrobieniu planu sprzedażowego jednej instytucji.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Zwykły doradca -->
+        <div class="bg-brandCard p-8 rounded-2xl border border-rose-900/30 relative">
+          <div class="text-xs font-bold uppercase tracking-wider text-rose-400 mb-2">Tradycyjny Przedstawiciel Handlowy</div>
+          <h3 class="text-xl font-bold text-white mb-4">Ograniczony do oferty jednego dostawcy</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start"><span class="text-rose-400 mr-2 font-bold">✕</span> Wpisuje wniosek w sztywny automat – przy braku obrotów lub stracie system wydaje natychmiastowe „odmowa”.</li>
+            <li class="flex items-start"><span class="text-rose-400 mr-2 font-bold">✕</span> Wymaga poręczenia majątkiem prywatnym członków zarządu.</li>
+            <li class="flex items-start"><span class="text-rose-400 mr-2 font-bold">✕</span> Brak możliwości finansowania maszyn wiekowych lub z bezpośrednią płatnością do UE w EUR.</li>
+            <li class="flex items-start"><span class="text-rose-400 mr-2 font-bold">✕</span> Zapytania „w ciemno” psują punktację scoringową Twojej firmy w BIK.</li>
+          </ul>
+        </div>
+
+        <!-- ArtSy Broker -->
+        <div class="bg-brandCard p-8 rounded-2xl border border-brandCyan/40 shadow-xl shadow-sky-950/20 relative">
+          <div class="text-xs font-bold uppercase tracking-wider text-brandCyan mb-2">Podejście ArtSy Broker (BABOK®)</div>
+          <h3 class="text-xl font-bold text-white mb-4">Niezależny doradca i analityk Twojego zysku</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start"><span class="text-brandGreen mr-2 font-bold">✓</span> Dobór funduszu do profilu ryzyka: procedury uproszczone od 15% wpłaty bez patrzenia na stratę bilansową.</li>
+            <li class="flex items-start"><span class="text-brandGreen mr-2 font-bold">✓</span> Brak weryfikacji majątku prywatnego zarządu w wyspecjalizowanych liniach finansowania.</li>
+            <li class="flex items-start"><span class="text-brandGreen mr-2 font-bold">✓</span> Bezpośrednia zapłata w EUR do zagranicznego dostawcy (Niemcy, Włochy) bez polskich pośredników.</li>
+            <li class="flex items-start"><span class="text-brandGreen mr-2 font-bold">✓</span> Bezpieczny pre-scoring w 24h z pełną ochroną baz BIK i KRD.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG: FINANSOWANIE I LEASING B2B -->
+  <section id="finansowanie" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-2">Inżynieria Finansowa</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">Leasing Maszyn i Pojazdów w Trudnych Procedurach</p>
+        <p class="mt-4 text-slate-400">Specjalizujemy się w transakcjach, od których tradycyjne banki odchodzą ze względu na wiek sprzętu, formę faktury lub profil bilansowy.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Usługa 1 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Import maszyn z UE</div>
+          <h3 class="text-lg font-bold text-white mb-2">Leasing z bezpośrednią płatnością w EUR</h3>
+          <p class="text-sm text-slate-300">Kupujesz maszynę w Niemczech, Włoszech czy Holandii? Finansujący płaci bezpośrednio zagranicznemu sprzedawcy w procedurze WNT – bez marży polskich pośredników.</p>
+        </div>
+
+        <!-- Usługa 2 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Spółki z o.o.</div>
+          <h3 class="text-lg font-bold text-white mb-2">Bez weryfikacji zarządu i bez obrotów</h3>
+          <p class="text-sm text-slate-300">Procedury uproszczone od 15% wpłaty dla spółek z krótkim stażem lub stratą bilansową. Decyzja w oparciu o wycenę sprzętu, bez poręczeń prywatnym majątkiem zarządu.</p>
+        </div>
+
+        <!-- Usługa 3 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandGreen font-bold text-sm mb-2">Uwolnienie gotówki</div>
+          <h3 class="text-lg font-bold text-white mb-2">Pożyczka pod zastaw bez zmiany właściciela</h3>
+          <p class="text-sm text-slate-300">Alternatywa dla leasingu zwrotnego. Uwalniasz do 80% gotówki z posiadanego parku maszynowego lub aut. Nie sprzedajesz sprzętu do banku, nie korygujesz VAT-u i zachowujesz 100% własności.</p>
+        </div>
+
+        <!-- Usługa 4 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Wiekowe maszyny</div>
+          <h3 class="text-lg font-bold text-white mb-2">Leasing maszyn używanych (10-15+ lat)</h3>
+          <p class="text-sm text-slate-300">Finansujemy linie technologiczne, frezarki CNC, wtryskarki i sprzęt budowlany, których wiek przekracza standardowe limity banków komercyjnych.</p>
+        </div>
+
+        <!-- Usługa 5 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Dotacje UE i Rolnictwo</div>
+          <h3 class="text-lg font-bold text-white mb-2">Pożyczka leasingowa pod dotacje (ARiMR / KPO)</h3>
+          <p class="text-sm text-slate-300">Gwarancja prawa własności od dnia zakupu – jedyna forma dopuszczalna przy rozliczaniu dotacji unijnych. Harmonogramy spłat dopasowane do sezonowości lub transz refundacji.</p>
+        </div>
+
+        <!-- Usługa 6 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandCyan/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Faktura VAT-Marża</div>
+          <h3 class="text-lg font-bold text-white mb-2">Pożyczka leasingowa na auta i maszyny</h3>
+          <p class="text-sm text-slate-300">Kupujesz sprzęt od komisu lub osoby prywatnej na fakturę VAT-Marża? Finansujemy transakcję pożyczką bez konieczności sztucznego doliczania 23% VAT do ceny.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG: ENERGETYKA B2B -->
+  <section id="energia" class="py-20 bg-slate-900/50 border-t border-brandBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brandGreen mb-2">Optymalizacja Kosztów Stałych</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">Hurtowy Zakup Energii, Gazu i Likwidacja Kar</p>
+        <p class="mt-4 text-slate-400">Analizujemy faktury dystrybucyjne i zabezpieczamy wolumeny mediów w modelach giełdowych, eliminując ukryte koszty bez zakłócania pracy zakładu.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Energia 1 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandGreen font-bold text-sm mb-2">0 zł bez zmiany sprzedawcy</div>
+          <h3 class="text-lg font-bold text-white mb-2">Darmowy audyt faktury dystrybucyjnej</h3>
+          <p class="text-sm text-slate-300">Weryfikujemy faktury PGE, Tauron, Enea, Energa w 24h. Wykrywamy zawyżoną moc umowną i błędnie dobrane grupy taryfowe. Oszczędzasz bez zmiany obecnego dostawcy.</p>
+        </div>
+
+        <!-- Energia 2 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandGreen font-bold text-sm mb-2">Likwidacja kar z faktury</div>
+          <h3 class="text-lg font-bold text-white mb-2">Aktywne kompensatory mocy biernej</h3>
+          <p class="text-sm text-slate-300">Dynamiczna eliminacja do 100% opłat za ponadumowny pobór energii biernej indukcyjnej i pojemnościowej (tg phi). Urządzenia dopasowane do obciążeń dynamicznych.</p>
+        </div>
+
+        <!-- Energia 3 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandGreen font-bold text-sm mb-2">AI & Peak Shaving</div>
+          <h3 class="text-lg font-bold text-white mb-2">Leasing magazynów energii (BESS) i PV B2B</h3>
+          <p class="text-sm text-slate-300">Przemysłowe magazyny energii sterowane algorytmami AI. Ścinanie szczytowego poboru mocy (redukcja opłaty mocowej) oraz integracja z programami DSR.</p>
+        </div>
+
+        <!-- Energia 4 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">Rynek Hurtowy</div>
+          <h3 class="text-lg font-bold text-white mb-2">Energia: SPOT, Transze i Stała Cena</h3>
+          <p class="text-sm text-slate-300">Zakupy energii bezpośrednio z giełdy TGE (Rynek Dnia Następnego), transzowanie wolumenu lub gwarancja stałej ceny. Hedging sezonowy (Q1/Q4 vs Q2/Q3).</p>
+        </div>
+
+        <!-- Energia 5 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandCyan font-bold text-sm mb-2">B2B Gaz Ziemny</div>
+          <h3 class="text-lg font-bold text-white mb-2">Kontrakty na gaz: SPOT i Fixed</h3>
+          <p class="text-sm text-slate-300">Zabezpieczenie instalacji technologicznych i grzewczych przed skokami cenowymi. Rozliczenia oparte o bieżące notowania TGEgaza bez marż koncernów.</p>
+        </div>
+
+        <!-- Energia 6 -->
+        <div class="bg-brandCard p-6 rounded-xl border border-brandBorder hover:border-brandGreen/50 transition">
+          <div class="text-brandGreen font-bold text-sm mb-2">Dodatkowy Przychód</div>
+          <h3 class="text-lg font-bold text-white mb-2">Programy DSR (Demand Side Response)</h3>
+          <p class="text-sm text-slate-300">Wynagrodzenie pieniężne od Polskich Sieci Elektroenergetycznych (PSE) za gotowość do czasowej redukcji mocy na wezwanie. Zamień redukcję w zysk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODEL SAMOSPŁACAJĄCY SIĘ -->
+  <section id="model-samosplacajacy" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-b from-brandCard to-slate-900 border-2 border-brandGreen/50 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-brandGreen/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="inline-block px-3 py-1 bg-brandGreen/20 text-brandGreen font-bold text-xs rounded-md uppercase tracking-wider mb-4 border border-brandGreen/30">
+          Unikalna Przewaga ArtSy Broker
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl font-black text-white mb-4">
+          Model Inwestycji Samospłacającej się (Cash-Flow Positive)
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed">
+          Dlaczego masz inwestować własną gotówkę, skoro możesz przekierować obecne kary za prąd na ratę nowego sprzętu?
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-6 bg-slate-950/60 p-6 rounded-2xl border border-brandBorder mb-8">
+          <div>
+            <div class="text-xs text-rose-400 font-bold uppercase">1. Stan początkowy</div>
+            <div class="text-xl font-bold text-white mt-1">Kary na fakturze</div>
+            <div class="text-sm text-slate-400 mt-1">np. -5 500 zł / mies. kar za moc bierną i opłatę mocową.</div>
+          </div>
+          <div>
+            <div class="text-xs text-brandCyan font-bold uppercase">2. Rozwiązanie ArtSy</div>
+            <div class="text-xl font-bold text-white mt-1">Leasing 0% wkładu</div>
+            <div class="text-sm text-slate-400 mt-1">Rata kompensatora aktywnego: np. +3 200 zł / mies.</div>
+          </div>
+          <div>
+            <div class="text-xs text-brandGreen font-bold uppercase">3. Wynik netto</div>
+            <div class="text-xl font-black text-brandGreen mt-1">+2 300 zł / mies.</div>
+            <div class="text-sm text-slate-400 mt-1">Czysty zysk od 1. dnia, a po spłacie sprzęt zostaje w firmie!</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <span class="text-sm text-slate-300 font-medium">Chcesz sprawdzić, ile Twoja firma zyska na tym modelu?</span>
+          <a href="#kontakt" class="px-6 py-3 bg-brandGreen hover:bg-emerald-400 text-slate-950 font-black rounded-xl transition shadow-lg shadow-emerald-950/40">
+            Oblicz Potencjał Oszczędności
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section id="case-study" class="py-20 bg-slate-900/50 border-t border-brandBorder">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-2">Realne Działania</h2>
+        <p class="text-3xl font-black text-white">Case Study: Spółka z o.o. bez obrotów i trudny leasing</p>
+      </div>
+
+      <div class="bg-brandCard border border-brandBorder p-8 rounded-2xl">
+        <div class="flex items-center justify-between text-xs text-slate-400 border-b border-brandBorder/60 pb-4 mb-6">
+          <span>Klient: 2-letnia spółka z o.o. bez historii obrotów</span>
+          <span class="text-brandGreen font-bold">Status: Zrealizowano 100%</span>
+        </div>
+
+        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+          Klient zgłosił się z celem pozyskania auta osobowego i motocykla. Podczas weryfikacji 3 kolejne wybrane samochody zostały przez nas odrzucone, ponieważ każdy posiadał w bazach ukrytą szkodę powypadkową – chroniliśmy klienta przed kupnem kota w worku. W międzyczasie upatrzony mniejszy motocykl został sprzedany innemu kupcowi.
+        </p>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6 font-medium">
+          Klient zdecydował o wyborze mocniejszego i droższego motocykla. Dla banku była to sytuacja bez wyjścia: brak przychodów w spółce i wniosek na drogi sprzęt rekreacyjny.
+        </p>
+
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-brandBorder text-xs space-y-2 text-slate-300 mb-6">
+          <div class="font-bold text-brandCyan">Działania brokera (Podejście BABOK):</div>
+          <div>• Błyskawiczna modyfikacja wniosku finansowego na droższy model w procedurze uproszczonej.</div>
+          <div>• Zero poręczeń majątkiem prywatnym członków zarządu.</div>
+          <div>• Sprawne uzupełnienie danych formalnych i konfiguracja dedykowanego rachunku firmowego.</div>
+        </div>
+
+        <div class="text-sm font-bold text-brandGreen flex items-center space-x-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          <span>Finał: Decyzja pozytywna. Klient odebrał wymarzony motocykl bez kompromisów.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARZ NETLIFY & KONTAKT -->
+  <section id="kontakt" class="py-20 border-t border-brandBorder">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-2">Rozpocznij Bez Ryzyka</h2>
+        <p class="text-3xl sm:text-4xl font-black text-white">Bezpłatna Weryfikacja w 24 Godziny</p>
+        <p class="mt-4 text-slate-400">Prześlij NIP firmy do pre-scoringu lub załącz plik z fakturą za energię. Bez zapytań w BIK.</p>
+      </div>
+
+      <!-- FORMULARZ Z OBSŁUGĄ NETLIFY FORMS -->
+      <form name="kontakt" method="POST" data-netlify="true" enctype="multipart/form-data" class="bg-brandCard border border-brandBorder p-8 rounded-2xl shadow-xl space-y-6">
+        <input type="hidden" name="form-name" value="kontakt" />
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Imię i Nazwisko / Osoba do kontaktu</label>
+            <input type="text" name="imie" required class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition" placeholder="np. Jan Kowalski">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Numer Telefonu</label>
+            <input type="tel" name="telefon" required class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition" placeholder="np. +48 722 326 385">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Adres E-mail</label>
+            <input type="email" name="email" required class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition" placeholder="np. kontakt@twojafirma.pl">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">NIP Spółki / Firmy</label>
+            <input type="text" name="nip" required class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition" placeholder="10 cyfr">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Czym możemy się zająć?</label>
+          <select name="temat" class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition">
+            <option value="leasing-maszyn-aut">Leasing maszyn lub pojazdów (trudna procedura / spółka / import UE)</option>
+            <option value="pozyczka-zwrotna">Pożyczka pod zastaw posiadanych maszyn/aut (bez sprzedaży)</option>
+            <option value="audyt-energii-moc-bierna">Darmowy audyt faktury za energię / likwidacja kar za moc bierną</option>
+            <option value="zakup-energii-gaz">Hurtowy zakup prądu lub gazu dla firmy</option>
+            <option value="magazyny-ai">Magazyny energii BESS i fotowoltaika B2B</option>
+          </select>
+        </div>
+
+        <!-- UPLOAD PLIKU (FAKTURA / SPECYFIKACJA) -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Załącz fakturę za energię lub ofertę na maszynę (Opcjonalnie - PDF / JPG)</label>
+          <input type="file" name="zalacznik" class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-2.5 text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-brandBlue file:text-white hover:file:bg-sky-500 cursor-pointer">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Krótki opis sytuacji (Opcjonalnie)</label>
+          <textarea name="wiadomosc" rows="3" class="w-full bg-slate-900 border border-brandBorder rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-brandCyan transition" placeholder="np. Spółka ma 2 lata, potrzebujemy frezarki CNC z Niemiec lub mamy kary za moc bierną 3 tys. zł..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-brandBlue hover:bg-sky-500 text-white font-black rounded-xl transition shadow-xl shadow-sky-950/40 text-base uppercase tracking-wider">
+          Wyślij do bezpłatnej analizy (24h)
+        </button>
+        
+        <p class="text-center text-xs text-slate-500">
+          Wysyłając formularz, wyrażasz zgodę na kontakt doradcy ArtSy Broker w celu przygotowania wyceny. Dane są bezpieczne, nie pobieramy zapytań w BIK.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- STOPKA Z DANYMI NAP (Google Maps) -->
+  <footer class="bg-slate-950 border-t border-brandBorder/60 py-12 text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <div class="text-xl font-black text-white tracking-tight">ArtSy <span class="text-brandCyan">Broker</span></div>
+        <p class="mt-3 text-xs text-slate-400 leading-relaxed">
+          Niezależny broker finansowania B2B oraz strategiczny doradca efektywności energetycznej. Analiza biznesowa według BABOK® Guide.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-white mb-3">Dane Rejestrowe & Siedziba</div>
+        <p class="text-xs text-slate-300">
+          ul. Waleriana Łukasińskiego 13a<br>
+          20-454 Lublin, Polska<br>
+          <a href="https://maps.app.goo.gl/L1sqtnhjxuyJpMpX7" target="_blank" class="text-brandCyan hover:underline mt-1 inline-block">Zobacz na Google Maps →</a>
+        </p>
+      </div>
+
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-white mb-3">Kontakt Bezpośredni</div>
+        <p class="text-xs text-slate-300 space-y-1">
+          Telefon: <a href="tel:+48722326385" class="text-white hover:text-brandCyan font-semibold">+48 722 326 385</a><br>
+          E-mail: <a href="mailto:artur@artsy.broker" class="text-white hover:text-brandCyan">artur@artsy.broker</a><br>
+          Godziny: Pon – Pt: 9:00 – 18:00
+        </p>
+      </div>
+
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-white mb-3">Gwarancja Jakości</div>
+        <div class="text-xs text-slate-400">
+          ⭐ 5.0 w Google Maps<br>
+          Zero zapytań kredytowych w ciemno.<br>
+          Audyty energetyczne bez zmiany dostawcy.
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-900 text-xs text-center text-slate-600">
+      &copy; 2026 ArtSy Broker. Wszelkie prawa zastrzeżone. Realizacja B2B.
+    </div>
+  </footer>
+
+</body>
+</html>
